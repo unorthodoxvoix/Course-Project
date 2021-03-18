@@ -1,0 +1,55 @@
+.header {
+    background-color: #063C5E;
+}
+.list {
+    list-style-type: none;
+}
+.list {
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    border: none;
+}
+
+.footer{
+    background-color: #063C5E;
+    color: #ffffff;
+    width: auto;
+    max-width:none
+}
+#fimg {
+    width: 150px;
+}
+.footer{
+    padding-top: 25px;
+    margin-top: 25px;
+    border-top-style: solid;
+    border-top-color:#fcc144;
+    border-top-width: 10px;
+
+}
+.card {
+    border-style: solid;
+    border-width: 10px;
+    border-radius: 10px;
+    border-color: #fcc144;
+}
+.card-top{
+    background-color: #063C5E;
+
+    
+}
+
+.comic-title h1 {
+    margin-top: 0%;
+    margin-bottom: 0%;
+    color: #fcc144;
+    text-align: center;
+}
+.card {
+    width: 75%;
+}
+.comic-card-img {
+    margin: 20px auto;
+    width: 400px;
+    display: block;
+}
