@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 
-<html lang="en">
 
 <head>
+    <meta charset="en">
+    
     <title>CodeSquad Comics</title>
     
     <link rel="stylesheet" type="text/css" href="/public/Styles/styles.css">
@@ -10,9 +11,11 @@
 </head>
 
     <body>
-
-        <header class="header">
-            <nav> <a href="index.html"> <img src="public/images/CodeSquad-Comics-logo.png" alt="Code Squad Comics Logo"></a>
+        
+        <section>
+        
+            <header class="header">
+            <nav class="nav"> <a href="index.html"> <img src="public/images/CodeSquad-Comics-logo.png" alt="Code Squad Comics Logo"></a>
                 <ul class="list">  
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="about.html">ABOUT</a></li>
@@ -21,27 +24,29 @@
             </nav>
 
         </header>
+       
+    </section>
 
         <section>
-
-            <h1>CODESQAUD COMICS</h1>
+            
+            <div class="content-container">
+            
+                <h1>CODESQAUD COMICS</h1>
 
             <p>
                 CodeSqaud Comics is a collection of graphic novels read by Quentin Brandel. This site is intended to display comic book covers along with
                 information about each book, including the author, a rating, and other details about the graphic novel. Browse through the complete collection below.
-                CLick on the cover image or the Details link to see even more information for each graphic novel including the publisher, genre, number of pages,
+                Click on the cover image or the Details link to see even more information for each graphic novel including the publisher, genre, number of pages,
                 and a brief synopsis. The About page includeds meta information about this collection. Login is only available to the site adminstrator at this time.
-            
             </p>
 
-        </section>
-
-        <section>
-
+            </div>
 
         </section>
 
-            <h1>COMPLETE COMIC COLLECTION</h1>
+        <section class="collection">
+
+            <h2>COMPLETE COMIC COLLECTION</h2>
 
             <p class="small">
         
@@ -88,22 +93,37 @@
         <div class="footer">
         
             <footer>
+                
+                <div class="footer-container">
 
                 <h3>VISIT US</h3>
         
                     <p>CodeSquad Comics <br> 123 Docehster Avenue <br> Boston, Ma 02124</p>
 
-                <h3>LINKS</h3>
+                </div>
 
-                    <p><a href="index.html">Home</a> <br> <a href="about.html">About</a> <br> <a href="login.html">Login</a></p>
+                <div class="footer-container">
 
-                <h3>FOLLOW US</h3>
+                    <h3>LINKS</h3>
 
-                    <p><a href="#"> Facebook</a> <br> <a href="#">Instagram</a> <br> <a href="#">Twitter</a></p>
+                        <p><a href="index.html">Home</a> <br> <a href="about.html">About</a> <br> <a href="login.html">Login</a></p>
+                
+                </div>  
+                
+                <div class="footer-container">
+                    
+                    <h3>FOLLOW US</h3>
+
+                        <p><a href="#"> Facebook</a> <br> <a href="#">Instagram</a> <br> <a href="#">Twitter</a></p>
             
-                <h3>A PRODUCT OF</h3>
+                    
+                <div class="footer-container">
+                        
+                    <h3>A PRODUCT OF</h3>
 
                         <a href="http://www.codesquad.org"><img id="fimg" src="public/images/CodeSquad-logo-b.png" alt="Code Squad Logo B"></a>
+
+                </div>
 
             </footer>
         
