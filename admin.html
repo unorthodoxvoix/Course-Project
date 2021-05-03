@@ -8,124 +8,162 @@
     
     <title> CodeSquad Comics</title>
     
-    <link rel="stylesheet" type="text/css" href="/public/Styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="./public/Styles/styles.css">
 
 </head>
 
     <body>
 
-        <header class="header">
+        <header>
             
-            <nav class="nav"><a href="index.html"> <img src="public/images/CodeSquad-Comics-logo.png" alt="Code Squad Comics Logo"></a>
-                <ul class="list">
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="login.html">LOGIN</a></li>
+            <div class="himg">
+                <a href="index.html" target="-sef"><img src="public/images/CodeSquad-Comics-logo.png" alt="Code Squad Comics Logo"></a>
+            </div>
+
+            <nav id="list">
+                <ul>
+                    <li><a href="index.html" target="_blank" rel="noreferrer noopener">HOME</a></li>
+                    <li><a href="about.html" target="_blank" rel="noreferrer noopener">ABOUT</a></li>
+                    <li><a href="login.html" target="_blank" rel="noreferrer noopener">LOGIN</a></li>
                 </ul>
             </nav>
     
         </header>
-
-        <h3>ADMIN PAGE</h3>
-
-        <button type="button" onclick="alert ('ADD NEW COMIC')">ADD NEW COMIC</button>
-    
-        <br>
+        
         <br>
 
-        <table>
-            <tr>
-            <th>COMIC TITLES</th>
-            <th>EDIT</th>
-            <th>DELETE</th>
-        </tr>
-        <tr>
-            <td>Batman: The Dark Knight Returns</td>
-            <td><button type="button" onclick="alert ('EDIT')">EDIT</button></td>
-            <td><button type="button" onclick="alert ('EDIT')">DELETE</button></td>
-        </tr>
-        <tr>
-            <td>Black Panther: A Nation Under Our Feet Book 1</td>
-            <td><button type="button" onclick="alert ('EDIT')">EDIT</button></td>
-            <td><button type="button" onclick="alert ('EDIT')">DELETE</button></td>
-        </tr>
-        <tr>
-            <td>Fun Home: A Family Tragicomic</td>
-            <td><button type="button" onclick="alert ('EDIT')">EDIT</button></td>
-            <td><button type="button" onclick="alert ('EDIT')">DELETE</button></td>
-        </tr>
-        <tr>
-            <td>Hunter X Hunter Vol. 1</td>
-            <td><button type="button" onclick="alert ('EDIT')">EDIT</button></td>
-            <td><button type="button" onclick="alert ('EDIT')">DELETE</button></td>
-        </tr>
-        <tr>
-            <td>Lumberjanes Vol. 1</td>
-            <td><button type="button" onclick="alert ('EDIT')">EDIT</button></td>
-            <td><button type="button" onclick="alert ('EDIT')">DELETE</button></td>
-        </tr>
-        <tr>
-            <td>March: Book One</td>
-            <td><button type="button" onclick="alert ('EDIT')">EDIT</button></td>
-            <td><button type="button" onclick="alert ('EDIT')">DELETE</button></td>
-        </tr>
-        <tr>
-            <td>One Piece, Vol. 1: Romance Dawn</td>
-            <td><button type="button" onclick="alert ('EDIT')">EDIT</button></td>
-            <td><button type="button" onclick="alert ('EDIT')">DELETE</button></td>
-        </tr>
-        <tr>
-            <td> Parable of the Sower</td>
-            <td><button type="button" onclick="alert ('EDIT')">EDIT</button></td>
-            <td><button type="button" onclick="alert ('EDIT')">DELETE</button></td>
-        </tr>
-        <tr>
-            <td>Queer: A Graphic History</td>
-            <td><button type="button" onclick="alert ('EDIT')">EDIT</button></td>
-            <td><button type="button" onclick="alert ('EDIT')">DELETE</button></td>
-        </tr>
-        <tr>
-            <td>The Walking Dead, Vol. 1: Days Gone Bye</td>
-            <td><button type="button" onclick="alert ('EDIT')">EDIT</button></td>
-            <td><button type="button" onclick="alert ('EDIT')">DELETE</button></td>
-        </tr>
-        <tr>
-            <td>Wake: The Hidden History</td>
-            <td><button type="button" onclick="alert ('EDIT')">EDIT</button></td>
-            <td><button type="button" onclick="alert ('EDIT')">DELETE</button></td>
-        </tr>
-        <tr>
-            <td>Watchmen</td>
-            <td><button type="button" onclick="alert ('EDIT')">EDIT</button></td>
-            <td><button type="button" onclick="alert ('EDIT')">DELETE</button></td>
-        </tr>
         
-        </table>
+        <div id="center-div">
 
-        <div id="footer">
-
-        <footer class="footer">
-
-            <h3>VISIT US</h3>
+            <h1>ADMIN PAGE</h1>
         
-                <p>CodeSquad Comics <br> 123 Docehster Avenue <br> Boston, Ma 02124</p>
+            <button type="button" id="addnew" onclick="alert ('ADD NEW COMIC')">ADD NEW COMIC</button>
+        
+            <br>
+            <br>
 
-            <h3>LINKS</h3>
+            <table class="comic-table">
+                <tr class="admin-row-size">
+                    <th>COMIC TITLES</th>
+                    <th>EDIT</th>
+                    <th>DELETE</th>
+                </tr>
+                <tr class="admin-row-size">
+                    <td>Batman: The Dark Knight Returns</td>
+                    <td><button type="button" class="blue-button" onclick="alert ('EDIT')">EDIT</button></td>
+                    <td><button type="button" class="gold-button" onclick="alert ('EDIT')">DELETE</button></td>
+                </tr>
 
-                <p><a href="index.html">Home</a> <br> <a href="about.html">About</a> <br> <a href="login.html">Login</a></p>
+                <tr class="admin-row-size">
+                    <td>Black Panther: A Nation Under Our Feet Book 1</td>
+                    <td><button type="button" class="blue-button" onclick="alert ('EDIT')">EDIT</button></td>
+                    <td><button type="button" class="gold-button" onclick="alert ('EDIT')">DELETE</button></td>
+                </tr>
 
-            <h3>FOLLOW US</h3>
+                <tr class="admin-row-size">
+                    <td>Fun Home: A Family Tragicomic</td>
+                    <td><button type="button" class="blue-button" onclick="alert ('EDIT')">EDIT</button></td>
+                    <td><button type="button" class="gold-button" onclick="alert ('EDIT')">DELETE</button></td>
+                </tr>
 
-                <p>
-                    <a href="#"> Facebook</a> <br> <a href="#">Instagram</a> <br> <a href="#">Twitter</a>
-                </p>
+                <tr class="admin-row-size">
+                    <td>Hunter X Hunter Vol. 1</td>
+                    <td><button type="button" class="blue-button" onclick="alert ('EDIT')">EDIT</button></td>
+                    <td><button type="button" class="gold-button" onclick="alert ('EDIT')">DELETE</button></td>
+                </tr>
 
-            <h3>A PRODUCT OF</h3>
-    
-        <a href="http://www.codesquad.org"><img id="fimg" src="public/images/CodeSquad-logo-b.png" alt="Code Squad Logo B"></a>
+                <tr class="admin-row-size">
+                    <td>Lumberjanes Vol. 1</td>
+                    <td><button type="button" class="blue-button" onclick="alert ('EDIT')">EDIT</button></td>
+                    <td><button type="button" class="gold-button" onclick="alert ('EDIT')">DELETE</button></td>
+                </tr>
 
-        </footer>
-       
+                <tr class="admin-row-size">
+                    <td>March: Book One</td>
+                    <td><button type="button" class="blue-button" onclick="alert ('EDIT')">EDIT</button></td>
+                    <td><button type="button" class="gold-button" onclick="alert ('EDIT')">DELETE</button></td>
+                </tr>
+
+                <tr class="admin-row-size">
+                    <td>One Piece, Vol. 1: Romance Dawn</td>
+                    <td><button type="button" class="blue-button" onclick="alert ('EDIT')">EDIT</button></td>
+                    <td><button type="button" class="gold-button" onclick="alert ('EDIT')">DELETE</button></td>
+                </tr>
+
+                <tr class="admin-row-size">
+                    <td> Parable of the Sower</td>
+                    <td><button type="button" class="blue-button" onclick="alert ('EDIT')">EDIT</button></td>
+                    <td><button type="button" class="gold-button" onclick="alert ('EDIT')">DELETE</button></td>
+                </tr>
+
+                <tr class="admin-row-size">
+                    <td>Queer: A Graphic History</td>
+                    <td><button type="button" class="blue-button" onclick="alert ('EDIT')">EDIT</button></td>
+                    <td><button type="button" class="gold-button" onclick="alert ('EDIT')">DELETE</button></td>
+                </tr>
+
+                <tr class="admin-row-size">
+                    <td>The Walking Dead, Vol. 1: Days Gone Bye</td>
+                    <td><button type="button" class="blue-button" onclick="alert ('EDIT')">EDIT</button></td>
+                    <td><button type="button" class="gold-button" onclick="alert ('EDIT')">DELETE</button></td>
+                </tr>
+
+                <tr class="admin-row-size">
+                    <td>Wake: The Hidden History</td>
+                    <td><button type="button" class="blue-button" onclick="alert ('EDIT')">EDIT</button></td>
+                    <td><button type="button" class="gold-button" onclick="alert ('EDIT')">DELETE</button></td>
+                </tr>
+
+                <tr class="admin-row-size">
+                    <td>Watchmen</td>
+                    <td><button type="button" class="blue-button" onclick="alert ('EDIT')">EDIT</button></td>
+                    <td><button type="button" class="gold-button" onclick="alert ('EDIT')">DELETE</button></td>
+                </tr>
+        
+            </table>
+
+        </div>
+        
+
+        <br>
+
+     
+            <footer class="footer">
+                
+                <div class="footer-container">
+
+                    <h3>VISIT US</h3>
+        
+                        <p>CodeSquad Comics <br> 123 Dochester Avenue <br> Boston, Ma 02124</p>
+
+                </div>
+
+                <div class="footer-container">
+
+                    <h3>LINKS</h3>
+
+                        <p><a href="index.html">Home</a> <br> <a href="about.html">About</a> <br> <a href="login.html">Login</a></p>
+                
+                </div>  
+                
+                <div class="footer-container">
+                    
+                    <h3>FOLLOW US</h3>
+
+                        <p><a href="#"> Facebook</a> <br> <a href="#">Instagram</a> <br> <a href="#">Twitter</a></p>
+
+                </div>
+            
+                <div class="footer-container">
+                        
+                    <h3>A PRODUCT OF</h3>
+
+                        <a href="http://www.codesquad.org" target="_blank" rel="noreferrer noopener"><img id="fimg" src="public/images/CodeSquad-logo-b.png" alt="Code Squad Logo B"></a>
+
+                </div>
+
+            </footer>
+        
         </div>
 
     </body>

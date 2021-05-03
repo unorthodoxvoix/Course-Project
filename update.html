@@ -9,111 +9,135 @@
 
     <title>CodeSquad Comics</title>
 
-    <link rel="stylesheet" type="text/css" href="/public/Styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="./public/Styles/styles.css">
 
 </head>
 
     <body>
-
-        <header class="header">
-            
-            <nav class="nav"><a href="index.html"> <img src="public/images/CodeSquad-Comics-logo.png" alt="Code Squad Comics Logo"></a>
-                <ul class="list">
+     
+        <section>
+        
+            <header id="list">
+            <nav class="nav"> <a href="index.html"> <img src="public/images/CodeSquad-Comics-logo.png" alt="Code Squad Comics Logo"></a>
+                <ul class="list">  
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="about.html">ABOUT</a></li>
                     <li><a href="login.html">LOGIN</a></li>
                 </ul>
             </nav>
-    
+
         </header>
+       
+    </section>
+
+    <div id="center-div">
 
         <h1>UPDATE COMIC</h1>
 
+        <!--Create a div for the form! 50% Width auto margin-->
+        <div class="form-container">
+
         <form action="#">
-
-            <label for="title">Title:</label>
-            <input type="text" id="Title" name="title" value="title value stored in database">
+            <ul class="form-fields">
+                <li>
+                    <label for="title">Title:</label>
+                    <input type="text" id="Title" name="title" value="title value stored in database">
+                </li>
 
             <br>
-            <br>
-
-            <label for="Author">Author:</label>
-            <input type="text" id="Author" name="author" value="author value stored in database">
+                <li>
+                    <label for="Author">Author:</label>
+                    <input type="text" id="Author" name="author" value="author value stored in database">
+                </li>
             
             <br>
-            <br>
-
-            <label for="Publisher">Publisher:</label>
-            <select id="Publisher" name="publisher" >
-                <option value=""disabled selected hidden>Select</option>"
-                <option value="BOOM! Box">BOOM! Box</option>
-                <option value="DC Comics">DC Comics</option>
-                <option value="Harry N. Abrams">Harry N. Abrams</option>
-                <option value="Icon Books">Icon Books</option>
-                <option value="Image Comics">Image Comics</option>
-                <option value="Marvel">Marvel</option>
-                <option value="Simon & Schuster">Simon & Schuster</option>
-                <option value="Top Shelf Productions">Top Shelf Productions</option>
-                <option value="Viz Media LLC">Viz Media LLC</option>
-            </select>
-
-            <br>
-            <br>
-
-            <label for="Genre">Genre:</label>
-            <input type="text" id="Genre" name="Genre" value="genre data stored in database">
+                <li>
+                    <label for="Publisher">Publisher:</label>
+                    <select id="Publisher" name="publisher" >
+                        <option value=""disabled selected hidden>Select</option>"
+                        <option value="BOOM! Box">BOOM! Box</option>
+                        <option value="DC Comics">DC Comics</option>
+                        <option value="Harry N. Abrams">Harry N. Abrams</option>
+                        <option value="Icon Books">Icon Books</option>
+                        <option value="Image Comics">Image Comics</option>
+                        <option value="Marvel">Marvel</option>
+                        <option value="Simon & Schuster">Simon & Schuster</option>
+                        <option value="Top Shelf Productions">Top Shelf Productions</option>
+                        <option value="Viz Media LLC">Viz Media LLC</option>
+                    </select>
+                </li>
 
             <br>
-            <br>
-
-            <label for="Number of pages">Number of Pages:</label>
-            <input type="number" id="Number of Pages" name="Number of Pages" value="255">
-
-            <br>
-            <br>
-
-            <label for="Rating">Rating:</label>
-            <input type="number" id="Rating" name="Rating" value="5">
+                <li>
+                    <label for="Genre">Genre:</label>
+                    <input type="text" id="Genre" name="Genre" value="genre data stored in database">
+                </li>
 
             <br>
+                <li>
+                    <label for="Number of pages">Number of Pages:</label>
+                    <input type="number" id="Number of Pages" name="Number of Pages" value="255">
+                </li>
+            
             <br>
-
-            <label for="Synopsis">Synopsis:</label>
-            <input type="text" id="Synopsis" name="Synopsis" value="synopsis value stored in database">
+                <li>
+                    <label for="Rating">Rating:</label>
+                    <input type="number" id="Rating" name="Rating" value="5">
+                </li>
 
             <br>
+                <li>
+                    <label for="Synopsis">Synopsis:</label>
+                    <textarea rows="6" id="Synopsis" name="Synopsis" placeholder="Synopsis"></textarea>
+                </li>
+            
             <br>
-
-            <input type="submit" value="submit">
-
+                <li>
+                    <button type="submit">SUBMIT</button>
+                </li>
+                
+            </ul>
 
         </form>
 
-        <div class="footer">
-        
-            <footer>
+        </div>
+    </div>
+
+        <footer class="footer">
+                
+            <div class="footer-container">
 
                 <h3>VISIT US</h3>
-            
-                    <p>CodeSquad Comics <br> 123 Docehster Avenue <br> Boston, Ma 02124</p>
+    
+                    <p>CodeSquad Comics <br> 123 Dochester Avenue <br> Boston, Ma 02124</p>
+
+            </div>
+
+            <div class="footer-container">
 
                 <h3>LINKS</h3>
 
                     <p><a href="index.html">Home</a> <br> <a href="about.html">About</a> <br> <a href="login.html">Login</a></p>
-
+            
+            </div>  
+            
+            <div class="footer-container">
+                
                 <h3>FOLLOW US</h3>
 
-                    <p>
-                        <a href="#"> Facebook</a> <br> <a href="#">Instagram</a> <br> <a href="#">Twitter</a>
-                    </p>
+                    <p><a href="#"> Facebook</a> <br> <a href="#">Instagram</a> <br> <a href="#">Twitter</a></p>
 
-                <h3>A PRODUCT OF</h3>
+            </div>
         
-                    <a href="http://www.codesquad.org"><img id="fmig" src="public/images/CodeSquad-logo-b.png" alt="Code Squad Logo B"></a>
+            <div class="footer-container">
+                    
+                <h3>A PRODUCT OF</h3>
 
-            </footer>
+                    <a href="http://www.codesquad.org"><img id="fimg" src="public/images/CodeSquad-logo-b.png" alt="Code Squad Logo B"></a>
 
-        </div>
+            </div>
+
+        </footer>
 
     </body>
 

@@ -7,16 +7,17 @@
 <head>
 
     <title>CodeSquad Comics</title>
-    <link rel="stylesheet" type="text/css" href="/public/Styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="./public/Styles/styles.css">
 
 </head>
 
 <body>
-
-    <header class="header">
-            
-        <nav class="nav"><a href="index.html"> <img src="public/images/CodeSquad-Comics-logo.png" alt="Code Squad Comics Logo"></a>
-            <ul class="list">
+     
+    <section>
+        
+        <header id="list">
+        <nav class="nav"> <a href="index.html"> <img src="public/images/CodeSquad-Comics-logo.png" alt="Code Squad Comics Logo"></a>
+            <ul class="list">  
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="about.html">ABOUT</a></li>
                 <li><a href="login.html">LOGIN</a></li>
@@ -24,52 +25,77 @@
         </nav>
 
     </header>
+   
+</section>
 
-    <h1>LOGIN</h1>
+<section id="center-div">
+
+        <h1>LOGIN</h1>
 
     <form action="#"> 
-        <label for="email">Email Address:</label>
-        <input type="email" id="email" name="email" placeholder="Email">
+        
+        <ul class="form-fields">
+            
+            <li>
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Email">
+            </li>
 
         <br>
-        <br>
 
-        <label for="password">Password:</label>
-        <input type="email" id="password" name="password" placeholder="Password">
+            <li>
+                <label for="password">Password:</label>
+                <input type="email" id="password" name="password" placeholder="Password">
+            </li>
 
         <br>
-        <br>
-        <br>
+            <li>
+                <button type="submit">SUBMIT</button>
+            </li>
 
-        <input type="submit" value="submit">
+        </ul> 
+
     </form>
 
+     
 
+</section>
 
-    <div id="footer">
     <footer class="footer">
+                
+        <div class="footer-container">
 
-        <h3>VISIT US</h3>
-            
-            <p>CodeSquad Comics <br> 123 Docehster Avenue <br> Boston, Ma 02124</p>
+            <h3>VISIT US</h3>
 
-        <h3>LINKS</h3>
+                <p>CodeSquad Comics <br> 123 Dochester Avenue <br> Boston, Ma 02124</p>
 
-            <p><a href="index.html">Home</a> <br> <a href="about.html">About</a> <br> <a href="login.html">Login</a></p>
+        </div>
 
-        <h3>FOLLOW US</h3>
+        <div class="footer-container">
 
-            <p>
-                <a href="#"> Facebook</a> <br> <a href="#">Instagram</a> <br> <a href="#">Twitter</a>
-            </p>
-        <h3>A PRODUCT OF</h3>
+            <h3>LINKS</h3>
+
+                <p><a href="index.html">Home</a> <br> <a href="about.html">About</a> <br> <a href="login.html">Login</a></p>
         
-            <a href="http://www.codesquad.org"><img id="fimg" src="public/images/CodeSquad-logo-a.png" alt="Code Squad Logo B"></a>
+        </div>  
+        
+        <div class="footer-container">
+            
+            <h3>FOLLOW US</h3>
 
+                <p><a href="#"> Facebook</a> <br> <a href="#">Instagram</a> <br> <a href="#">Twitter</a></p>
+
+        </div>
+    
+        <div class="footer-container">
+                
+            <h3>A PRODUCT OF</h3>
+
+                <a href="http://www.codesquad.org"><img id="fimg" src="public/images/CodeSquad-logo-b.png" alt="Code Squad Logo B"></a>
+
+        </div>
 
     </footer>
-
-    </div>
 
 </body>
 

@@ -9,109 +9,135 @@
     
     <title>CodeSquad Comics</title>
     
-    <link rel="stylesheet" type="text/css" href="/public/Styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="./public/Styles/styles.css">
 
 </head>
 
     <body>
-
-        <header class="header">
-            
-            <nav class="nav"><a href="index.html"> <img src="public/images/CodeSquad-Comics-logo.png" alt="Code Squad Comics Logo"></a>
-                <ul class="list">
+     
+        <section>
+        
+            <header id="list">
+            <nav class="nav"> <a href="index.html"> <img src="public/images/CodeSquad-Comics-logo.png" alt="Code Squad Comics Logo"></a>
+                <ul class="list">  
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="about.html">ABOUT</a></li>
                     <li><a href="login.html">LOGIN</a></li>
                 </ul>
             </nav>
-    
+
         </header>
+       
+    </section>
+        
+        <div id="center-div">
 
         <h1>CREATE NEW COMIC</h1>
+        
+        <div class="form-container">
 
         <form action="#">
+            <ul class="form-fields">
 
-            <label for="title">Title:</label>
-            <input type="text" id="Title" name="title" placeholder="Title">
-
-            <br>
-            <br>
-
-            <label for="Author">Author:</label>
-            <input type="text" id="Author" name="author" placeholder="Author">
+                <li>
+                    <label for="title">Title:</label>
+                    <input type="text" id="Title" name="title" placeholder="Title">
+                </li>
             
             <br>
-            <br>
-
-            <label for="Publisher">Publisher:</label>
-            <select id="Publisher" name="publisher" >
-                <option value=""disabled selected hidden>Select</option>"
-                <option value="BOOM! Box">BOOM! Box</option>
-                <option value="DC Comics">DC Comics</option>
-                <option value="Harry N. Abrams">Harry N. Abrams</option>
-                <option value="Icon Books">Icon Books</option>
-                <option value="Image Comics">Image Comics</option>
-                <option value="Marvel">Marvel</option>
-                <option value="Simon & Schuster">Simon & Schuster</option>
-                <option value="Top Shelf Productions">Top Shelf Productions</option>
-                <option value="Viz Media LLC">Viz Media LLC</option>
-            </select>
+                <li>
+                    <label for="Author">Author:</label>
+                    <input type="text" id="Author" name="author" placeholder="Author">
+                </li>
 
             <br>
-            <br>
-
-            <label for="Genre">Genre:</label>
-            <input type="text" id="Genre" name="Genre" placeholder="Genre">
-
-            <br>
-            <br>
-
-            <label for="Number of pages">Number of Pages:</label>
-            <input type="number" id="Number of Pages" name="Number of Pages" placeholder="Number of pages">
-
-            <br>
-            <br>
-
-            <label for="Rating">Rating:</label>
-            <input type="number" id="Rating" name="Rating">
-
-            <br>
-            <br>
-
-            <label for="Synopsis">Synopsis:</label>
-            <input type="text" id="Synopsis" name="Synopsis" placeholder="Synopsis">
+                <li>
+                    <label for="Publisher">Publisher:</label>
+                    <select id="Publisher" name="publisher" >
+                        <option value=""disabled selected hidden>Select</option>"
+                        <option value="BOOM! Box">BOOM! Box</option>
+                        <option value="DC Comics">DC Comics</option>
+                        <option value="Harry N. Abrams">Harry N. Abrams</option>
+                        <option value="Icon Books">Icon Books</option>
+                        <option value="Image Comics">Image Comics</option>
+                        <option value="Marvel">Marvel</option>
+                        <option value="Simon & Schuster">Simon & Schuster</option>
+                        <option value="Top Shelf Productions">Top Shelf Productions</option>
+                        <option value="Viz Media LLC">Viz Media LLC</option>
+                    </select>
+                </li>
 
             <br>
+                <li>
+                    <label for="Genre">Genre:</label>
+                    <input type="text" id="Genre" name="Genre" placeholder="Genre">
+                </li>
+
+
             <br>
+                <li>
+                    <label for="Number of pages">Number of Pages:</label>
+                    <input type="number" id="Number of Pages" name="Number of Pages" placeholder="Number of pages">
+                </li>
 
-            <input type="submit" value="submit">
+            <br>
+                <li>
+                    <label for="Rating">Rating:</label>
+                    <input type="number" id="Rating" name="Rating">
+            </li>
 
+            <br>
+                <li>
+                    <label for="Synopsis">Synopsis:</label>
+                    <textarea rows="6" id="Synopsis" name="Synopsis" placeholder="Synopsis"></textarea>
+                </li>
+
+            <br>
+                <li>
+                    <button type="submit">SUBMIT</button>
+                </li>
+
+        </ul>
         </form>
-
-        <div id="footer">
+        </div>
+    
+        </div>
 
         <footer class="footer">
-
-            <h3>VISIT US</h3>
                 
-                <p>CodeSquad Comics <br> 123 Docehster Avenue <br> Boston, Ma 02124</p>
+            <div class="footer-container">
 
-            <h3>LINKS</h3>
+                <h3>VISIT US</h3>
+    
+                    <p>CodeSquad Comics <br> 123 Dochester Avenue <br> Boston, Ma 02124</p>
 
-                <p><a href="index.html">Home</a> <br> <a href="about.html">About</a> <br> <a href="login.html">Login</a></p>
+            </div>
 
-            <h3>FOLLOW US</h3>
+            <div class="footer-container">
 
-                <p>
-                    <a href="#"> Facebook</a> <br> <a href="#">Instagram</a> <br> <a href="#">Twitter</a>
-                </p>
-            <h3>A PRODUCT OF</h3>
+                <h3>LINKS</h3>
+
+                    <p><a href="index.html">Home</a> <br> <a href="about.html">About</a> <br> <a href="login.html">Login</a></p>
             
-                <a href="http://www.codesquad.org"><img id="fimg" src="public/images/CodeSquad-logo-b.png" alt="Code Squad Logo B"></a>
+            </div>  
+            
+            <div class="footer-container">
+                
+                <h3>FOLLOW US</h3>
+
+                    <p><a href="#"> Facebook</a> <br> <a href="#">Instagram</a> <br> <a href="#">Twitter</a></p>
+
+            </div>
+        
+            <div class="footer-container">
+                    
+                <h3>A PRODUCT OF</h3>
+
+                    <a href="http://www.codesquad.org"><img id="fimg" src="public/images/CodeSquad-logo-b.png" alt="Code Squad Logo B"></a>
+
+            </div>
 
         </footer>
-
-        </div>
 
     </body>
 
